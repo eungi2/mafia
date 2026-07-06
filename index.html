@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Mafia - Role Check</title>
+  <style>
+    :root{--bg:#f4f7fb;--card:#ffffff;--main:#1f4e79;--accent:#2f80ed;--text:#1f2937;--muted:#6b7280;--line:#dbe5f0;--warn:#ef4444;--ok:#16a34a;}
+    *{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Pretendard,"Noto Sans KR",Arial,sans-serif;background:linear-gradient(145deg,#eef5ff,#ffffff 48%,#f3f6fb);color:var(--text);display:flex;align-items:center;justify-content:center;padding:22px;}
+    .wrap{width:100%;max-width:430px}.card{background:var(--card);border:1px solid var(--line);border-radius:28px;box-shadow:0 20px 55px rgba(31,78,121,.16);padding:28px 24px;text-align:center;}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:#eef6ff;color:var(--main);border:1px solid #d5eaff;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:800;letter-spacing:.03em}
+    h1{font-size:25px;margin:18px 0 8px;color:var(--main)}.sub{font-size:14px;color:var(--muted);line-height:1.55;margin:0 0 22px}.rolebox{border:2px solid #d9e9ff;background:#f8fbff;border-radius:22px;padding:20px 16px;margin:18px 0}.label{font-size:13px;color:var(--muted);font-weight:800;letter-spacing:.14em}.role{font-size:42px;font-weight:950;color:var(--warn);margin:8px 0 4px;letter-spacing:.04em}.rule{font-size:16px;line-height:1.72;margin:16px 0 0}.rule strong{color:var(--main)}.notice{background:#f9fafb;border:1px dashed #cbd5e1;border-radius:18px;padding:14px;margin-top:18px;color:#374151;font-size:14px;line-height:1.65;text-align:left}.btn{width:100%;border:0;border-radius:16px;background:var(--accent);color:white;font-size:16px;font-weight:850;padding:15px 18px;margin-top:20px;box-shadow:0 10px 24px rgba(47,128,237,.24);cursor:pointer}.btn:active{transform:translateY(1px)}.footer{margin-top:14px;color:var(--muted);font-size:12px;line-height:1.5}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="badge">🕵️ JOB MAFIA</div>
+      <h1>역할 확인</h1>
+      <p class="sub">이 화면은 친구들에게 보여주지 말고 조용히 확인하세요.</p>
+      <div class="rolebox">
+        <div class="label">YOUR ROLE</div>
+        <div class="role">마피아</div>
+        <p class="rule">당신은 <strong>마피아</strong>입니다.<br>직업 카드 정보를 이용해 들키지 않게 행동하세요.</p>
+      </div>
+      <div class="notice">
+        🚨 카드 정보 6개 중 <strong>딱 1가지 항목만</strong> 거짓말할 수 있습니다.<br>
+        🚨 한 번 정한 거짓말 항목은 끝까지 바꾸지 마세요.<br>
+        🚨 나머지 정보는 반드시 사실대로 말해야 합니다.
+      </div>
+      <button class="btn" onclick="document.body.style.filter='brightness(0.08)';setTimeout(()=>document.body.style.filter='none',900)">잠깐 숨기기</button>
+      <div class="footer">화면을 닫거나 뒤집어 두면 더 안전합니다.</div>
+    </section>
+  </main>
+</body>
+</html>
